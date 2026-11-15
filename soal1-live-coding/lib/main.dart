@@ -86,7 +86,6 @@ class ProfilePage extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 24),
-              // Card Kontak (min. 4 InfoTile)
               Card(
                 elevation: 2,
                 child: Padding(
@@ -121,7 +120,6 @@ class ProfilePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 16),
-              // Card Keahlian / Hobi (min. 3 InfoTile)
               Card(
                 elevation: 2,
                 child: Padding(

@@ -16,7 +16,6 @@ class AboutPage extends StatelessWidget {
         child: ListView(
           padding: const EdgeInsets.all(16.0),
           children: [
-            // Section 1: Keahlian & Hobi (min. 3 item)
             Padding(
               padding: const EdgeInsets.only(left: 4.0, bottom: 8.0),
               child: Text(
@@ -62,7 +61,6 @@ class AboutPage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 24),
-            // Section 2: Riwayat Pendidikan
             Padding(
               padding: const EdgeInsets.only(left: 4.0, bottom: 8.0),
               child: Text(
@@ -97,7 +95,6 @@ class AboutPage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 24),
-            // Section 3: Informasi Tambahan
             Card(
               color: theme.colorScheme.primaryContainer,
               child: Padding(

@@ -64,7 +64,6 @@ class _EditProfilePageState extends State<EditProfilePage> {
       bio: _bioController.text.trim(),
     );
 
-    // Kirim data kembali ke ProfilePage melalui Navigator.pop
     Navigator.pop(context, updatedProfile);
   }
 

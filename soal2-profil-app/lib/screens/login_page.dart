@@ -32,7 +32,6 @@ class _LoginPageState extends State<LoginPage> {
       _isLoading = true;
     });
 
-    // Simulasi proses asynchronous loading selama 2 detik (Materi 5)
     await Future.delayed(const Duration(seconds: 2));
 
     if (!mounted) return;
@@ -41,7 +40,6 @@ class _LoginPageState extends State<LoginPage> {
       _isLoading = false;
     });
 
-    // Navigasi menggunakan pushReplacementNamed
     Navigator.pushReplacementNamed(context, '/profile');
   }
 

@@ -62,7 +62,6 @@ class _ProfilePageState extends State<ProfilePage> {
           ),
         ],
       ),
-      // Komponen Scaffold Tambahan 1: Drawer
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
@@ -136,7 +135,6 @@ class _ProfilePageState extends State<ProfilePage> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const SizedBox(height: 12),
-              // Foto diri dari folder assets/images/
               CircleAvatar(
                 radius: 56,
                 backgroundColor: theme.colorScheme.primaryContainer,
@@ -146,7 +144,6 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
               ),
               const SizedBox(height: 16),
-              // Nama Lengkap
               Text(
                 profile.nama,
                 textAlign: TextAlign.center,
@@ -155,7 +152,6 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
               ),
               const SizedBox(height: 6),
-              // NIM & Prodi
               Text(
                 '${profile.nim} • ${profile.prodi}',
                 textAlign: TextAlign.center,
@@ -165,7 +161,6 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
               ),
               const SizedBox(height: 4),
-              // Kelas
               Container(
                 margin: const EdgeInsets.only(top: 4),
                 padding:
@@ -183,7 +178,6 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
               ),
               const SizedBox(height: 16),
-              // Bio Singkat Card
               Card(
                 elevation: 1,
                 child: Padding(
@@ -205,7 +199,6 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
               ),
               const SizedBox(height: 16),
-              // Kontak Card
               Card(
                 elevation: 2,
                 child: Column(
@@ -231,7 +224,6 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
               ),
               const SizedBox(height: 16),
-              // Card Navigasi Cepat ke About Page
               Card(
                 elevation: 2,
                 child: ListTile(
@@ -249,7 +241,6 @@ class _ProfilePageState extends State<ProfilePage> {
           ),
         ),
       ),
-      // Komponen Scaffold Tambahan 2: FloatingActionButton
       floatingActionButton: FloatingActionButton.extended(
         onPressed: _navigateToEditProfile,
         icon: const Icon(Icons.edit),
