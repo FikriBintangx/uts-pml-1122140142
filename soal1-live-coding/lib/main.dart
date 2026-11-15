@@ -140,13 +140,13 @@ class ProfilePage extends StatelessWidget {
                     children: const [
                       InfoTile(
                         icon: Icons.flutter_dash,
-                        label: 'Keahlian 1',
-                        value: 'Flutter & Dart Mobile Development',
+                        label: 'Mata Kuliah',
+                        value: 'Aplikasi Mobile (Flutter)',
                       ),
                       Divider(height: 1),
                       InfoTile(
                         icon: Icons.security,
-                        label: 'Keahlian 2',
+                        label: 'Keahlian',
                         value: 'Application Security & Reverse Engineering',
                       ),
                       Divider(height: 1),

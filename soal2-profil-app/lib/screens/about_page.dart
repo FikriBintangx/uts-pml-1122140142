@@ -32,14 +32,14 @@ class AboutPage extends StatelessWidget {
                 children: const [
                   ListTile(
                     leading: Icon(Icons.flutter_dash, color: Colors.blue),
-                    title: Text('Flutter & Dart Development'),
+                    title: Text('Mata Kuliah: Aplikasi Mobile'),
                     subtitle: Text(
-                        'Membangun aplikasi mobile cross-platform Android & iOS'),
+                        'Pemrograman Mobile Lanjutan (Flutter & Dart Cross-Platform)'),
                   ),
                   Divider(height: 1),
                   ListTile(
                     leading: Icon(Icons.security, color: Colors.red),
-                    title: Text('Application Security & Reverse Engineering'),
+                    title: Text('Keahlian: Security & Reverse Engineering'),
                     subtitle: Text(
                         'Audit keamanan kode, binary analysis, dan mobile pentesting'),
                   ),
