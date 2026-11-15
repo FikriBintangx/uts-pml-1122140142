@@ -45,6 +45,38 @@ class _MyAppState extends State<MyApp> {
               centerTitle: true,
               elevation: 0,
             ),
+            cardTheme: CardThemeData(
+              elevation: 2,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(24.0),
+              ),
+              clipBehavior: Clip.antiAlias,
+            ),
+            inputDecorationTheme: InputDecorationTheme(
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20.0),
+              ),
+              enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20.0),
+                borderSide: BorderSide(color: Colors.grey.shade400),
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20.0),
+                borderSide: const BorderSide(color: Colors.blue, width: 2),
+              ),
+            ),
+            filledButtonTheme: FilledButtonThemeData(
+              style: FilledButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(24.0),
+                ),
+              ),
+            ),
+            floatingActionButtonTheme: FloatingActionButtonThemeData(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(24.0),
+              ),
+            ),
           ),
           darkTheme: ThemeData(
             useMaterial3: true,
@@ -55,6 +87,38 @@ class _MyAppState extends State<MyApp> {
             appBarTheme: const AppBarTheme(
               centerTitle: true,
               elevation: 0,
+            ),
+            cardTheme: CardThemeData(
+              elevation: 2,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(24.0),
+              ),
+              clipBehavior: Clip.antiAlias,
+            ),
+            inputDecorationTheme: InputDecorationTheme(
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20.0),
+              ),
+              enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20.0),
+                borderSide: BorderSide(color: Colors.grey.shade600),
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20.0),
+                borderSide: const BorderSide(color: Colors.blue, width: 2),
+              ),
+            ),
+            filledButtonTheme: FilledButtonThemeData(
+              style: FilledButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(24.0),
+                ),
+              ),
+            ),
+            floatingActionButtonTheme: FloatingActionButtonThemeData(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(24.0),
+              ),
             ),
           ),
           initialRoute: '/login',

@@ -15,14 +15,26 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: ThemeData(
         useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        cardTheme: CardThemeData(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(24.0),
+          ),
+          clipBehavior: Clip.antiAlias,
+        ),
       ),
       darkTheme: ThemeData(
         useMaterial3: true,
         brightness: Brightness.dark,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.indigo,
+          seedColor: Colors.blue,
           brightness: Brightness.dark,
+        ),
+        cardTheme: CardThemeData(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(24.0),
+          ),
+          clipBehavior: Clip.antiAlias,
         ),
       ),
       home: const ProfilePage(),
