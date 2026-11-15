@@ -45,7 +45,7 @@ class AboutPage extends StatelessWidget {
                   ),
                   Divider(height: 1),
                   ListTile(
-                    leading: Icon(Icons.design_services, color: Colors.purple),
+                    leading: Icon(Icons.design_services, color: Colors.blueAccent),
                     title: Text('UI/UX Design & Prototyping'),
                     subtitle: Text(
                         'Mendesain antarmuka aplikasi modern dengan Material 3'),

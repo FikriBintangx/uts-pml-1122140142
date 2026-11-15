@@ -38,7 +38,7 @@ class _MyAppState extends State<MyApp> {
           theme: ThemeData(
             useMaterial3: true,
             colorScheme: ColorScheme.fromSeed(
-              seedColor: Colors.deepPurple,
+              seedColor: Colors.blue,
               brightness: Brightness.light,
             ),
             appBarTheme: const AppBarTheme(
@@ -49,7 +49,7 @@ class _MyAppState extends State<MyApp> {
           darkTheme: ThemeData(
             useMaterial3: true,
             colorScheme: ColorScheme.fromSeed(
-              seedColor: Colors.deepPurple,
+              seedColor: Colors.blue,
               brightness: Brightness.dark,
             ),
             appBarTheme: const AppBarTheme(
