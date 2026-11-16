@@ -32,9 +32,9 @@ class AboutPage extends StatelessWidget {
                 children: const [
                   ListTile(
                     leading: Icon(Icons.flutter_dash, color: Colors.blue),
-                    title: Text('Mata Kuliah: Aplikasi Mobile Lanjutan'),
+                    title: Text('Mata Kuliah: Aplikasi Mobile'),
                     subtitle: Text(
-                        'Aplikasi Mobile Lanjutan (Flutter & Dart Cross-Platform)'),
+                        'Aplikasi Mobile (Flutter & Dart Cross-Platform)'),
                   ),
                   Divider(height: 1),
                   ListTile(
@@ -106,7 +106,7 @@ class AboutPage extends StatelessWidget {
                     const SizedBox(width: 16),
                     Expanded(
                       child: Text(
-                        'Aplikasi ini dibuat untuk memenuhi Ujian Tengah Semester (UTS) mata kuliah Aplikasi Mobile Lanjutan.',
+                        'Aplikasi ini dibuat untuk memenuhi Ujian Tengah Semester (UTS) mata kuliah Aplikasi Mobile.',
                         style: TextStyle(
                           color: theme.colorScheme.onPrimaryContainer,
                           fontSize: 13,
