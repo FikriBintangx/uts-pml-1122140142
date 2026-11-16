@@ -141,7 +141,7 @@ class ProfilePage extends StatelessWidget {
                       InfoTile(
                         icon: Icons.flutter_dash,
                         label: 'Mata Kuliah',
-                        value: 'Aplikasi Mobile (Flutter)',
+                        value: 'Aplikasi Mobile Lanjutan (Flutter)',
                       ),
                       Divider(height: 1),
                       InfoTile(
