@@ -77,7 +77,7 @@ class AboutPage extends StatelessWidget {
                 children: const [
                   ListTile(
                     leading: Icon(Icons.school, color: Colors.indigo),
-                    title: Text('S1 Teknik Informatika'),
+                    title: Text('Semester 5 - Teknik Informatika'),
                     subtitle: Text(
                         'Institut Teknologi & Bisnis Bina Sarana Global (2022 - Sekarang)'),
                     trailing: Text('IPK: 3.85',
@@ -87,8 +87,8 @@ class AboutPage extends StatelessWidget {
                   ListTile(
                     leading:
                         Icon(Icons.account_balance, color: Colors.teal),
-                    title: Text('SMK / SMA Negeri'),
-                    subtitle: Text('Jurusan Rekayasa Perangkat Lunak / IPA'),
+                    title: Text('SMK - Teknik Komputer & Jaringan (TKJ)'),
+                    subtitle: Text('Jurusan TKJ (Teknik Komputer dan Jaringan)'),
                     trailing: Text('Lulus 2022'),
                   ),
                 ],
