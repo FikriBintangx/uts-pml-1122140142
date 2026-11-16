@@ -33,33 +33,33 @@ class AboutPage extends StatelessWidget {
             Card(
               elevation: 2,
               child: Column(
-                children: const [
+                children: [
                   ListTile(
-                    leading: Icon(Icons.flutter_dash, color: Colors.blue),
-                    title: Text('Mata Kuliah: Aplikasi Mobile'),
-                    subtitle: Text(
+                    leading: Icon(Icons.phone_android, color: theme.colorScheme.primary),
+                    title: const Text('Mata Kuliah: Aplikasi Mobile'),
+                    subtitle: const Text(
                         'Aplikasi Mobile (Flutter & Dart Cross-Platform)'),
                   ),
-                  Divider(height: 1),
+                  const Divider(height: 1),
                   ListTile(
-                    leading: Icon(Icons.security, color: Colors.red),
-                    title: Text('Keahlian: Security & Reverse Engineering'),
-                    subtitle: Text(
+                    leading: Icon(Icons.security, color: theme.colorScheme.primary),
+                    title: const Text('Keahlian: Security & Reverse Engineering'),
+                    subtitle: const Text(
                         'Audit keamanan kode, binary analysis, dan mobile pentesting'),
                   ),
-                  Divider(height: 1),
+                  const Divider(height: 1),
                   ListTile(
-                    leading: Icon(Icons.design_services, color: Colors.blueAccent),
-                    title: Text('UI/UX Design & Prototyping'),
-                    subtitle: Text(
+                    leading: Icon(Icons.design_services, color: theme.colorScheme.primary),
+                    title: const Text('UI/UX Design & Prototyping'),
+                    subtitle: const Text(
                         'Mendesain antarmuka aplikasi modern dengan Material 3'),
                   ),
-                  Divider(height: 1),
+                  const Divider(height: 1),
                   ListTile(
-                    leading: Icon(Icons.sports_esports, color: Colors.green),
-                    title: Text('E-Sports & Gaming Strategy'),
+                    leading: Icon(Icons.sports_esports, color: theme.colorScheme.primary),
+                    title: const Text('E-Sports & Gaming Strategy'),
                     subtitle:
-                        Text('Mengasah fokus, refleks, dan kerja sama tim'),
+                        const Text('Mengasah fokus, refleks, dan kerja sama tim'),
                   ),
                 ],
               ),
@@ -78,22 +78,22 @@ class AboutPage extends StatelessWidget {
             Card(
               elevation: 2,
               child: Column(
-                children: const [
+                children: [
                   ListTile(
-                    leading: Icon(Icons.school, color: Colors.indigo),
-                    title: Text('Semester 5 - Teknik Informatika'),
-                    subtitle: Text(
+                    leading: Icon(Icons.school, color: theme.colorScheme.primary),
+                    title: const Text('Semester 5 - Teknik Informatika'),
+                    subtitle: const Text(
                         'Institut Teknologi & Bisnis Bina Sarana Global (2022 - Sekarang)'),
-                    trailing: Text('IPK: 3.85',
+                    trailing: const Text('IPK: 3.85',
                         style: TextStyle(fontWeight: FontWeight.bold)),
                   ),
-                  Divider(height: 1),
+                  const Divider(height: 1),
                   ListTile(
                     leading:
-                        Icon(Icons.account_balance, color: Colors.teal),
-                    title: Text('SMK - Teknik Komputer & Jaringan (TKJ)'),
-                    subtitle: Text('Jurusan TKJ (Teknik Komputer dan Jaringan)'),
-                    trailing: Text('Lulus 2022'),
+                        Icon(Icons.account_balance, color: theme.colorScheme.primary),
+                    title: const Text('SMK - Teknik Komputer & Jaringan (TKJ)'),
+                    subtitle: const Text('Jurusan TKJ (Teknik Komputer dan Jaringan)'),
+                    trailing: const Text('Lulus 2022'),
                   ),
                 ],
               ),

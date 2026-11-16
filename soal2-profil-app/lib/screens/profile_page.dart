@@ -227,7 +227,7 @@ class _ProfilePageState extends State<ProfilePage> {
               Card(
                 elevation: 2,
                 child: ListTile(
-                  leading: const Icon(Icons.info, color: Colors.indigo),
+                  leading: Icon(Icons.info, color: theme.colorScheme.primary),
                   title: const Text('Keahlian & Riwayat Pendidikan'),
                   subtitle: const Text('Lihat informasi lengkap tentang saya'),
                   trailing: const Icon(Icons.arrow_forward, size: 20),
@@ -236,15 +236,37 @@ class _ProfilePageState extends State<ProfilePage> {
                   },
                 ),
               ),
-              const SizedBox(height: 80),
+              const SizedBox(height: 24),
             ],
           ),
         ),
       ),
-      floatingActionButton: FloatingActionButton.extended(
-        onPressed: _navigateToEditProfile,
-        icon: const Icon(Icons.edit),
-        label: const Text('Edit Profil'),
+      bottomNavigationBar: NavigationBar(
+        selectedIndex: 0,
+        onDestinationSelected: (index) {
+          if (index == 1) {
+            _navigateToEditProfile();
+          } else if (index == 2) {
+            Navigator.pushNamed(context, '/about');
+          }
+        },
+        destinations: const [
+          NavigationDestination(
+            icon: Icon(Icons.person_outline),
+            selectedIcon: Icon(Icons.person),
+            label: 'Profil',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.edit_outlined),
+            selectedIcon: Icon(Icons.edit),
+            label: 'Edit',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.info_outline),
+            selectedIcon: Icon(Icons.info),
+            label: 'Tentang',
+          ),
+        ],
       ),
     );
   }

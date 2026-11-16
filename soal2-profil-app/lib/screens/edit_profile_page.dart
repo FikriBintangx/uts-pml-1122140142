@@ -106,13 +106,6 @@ class _EditProfilePageState extends State<EditProfilePage> {
           icon: const Icon(Icons.arrow_back),
           onPressed: () => Navigator.of(context).maybePop(),
         ),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.check),
-            tooltip: 'Simpan',
-            onPressed: _simpanPerubahan,
-          ),
-        ],
       ),
       body: SafeArea(
         child: SingleChildScrollView(
