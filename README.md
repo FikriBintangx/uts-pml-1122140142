@@ -8,7 +8,7 @@ Kelas: Pemrograman Mobile Lanjutan
 Prodi: Teknik Informatika
 Dosen: IKetut Gunawan, S.Kom., M.Kom.
 
-Link Video Demo: https://youtu.be/uts-pml-1122140142
+Link Video Demo: soon
 
 Struktur Project:
 - soal1-live-coding : Project live coding halaman profil murni StatelessWidget
