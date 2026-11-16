@@ -11,6 +11,10 @@ class AboutPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Tentang Saya'),
         centerTitle: true,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () => Navigator.of(context).maybePop(),
+        ),
       ),
       body: SafeArea(
         child: ListView(

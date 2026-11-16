@@ -102,6 +102,10 @@ class _EditProfilePageState extends State<EditProfilePage> {
       appBar: AppBar(
         title: const Text('Edit Profil'),
         centerTitle: true,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () => Navigator.of(context).maybePop(),
+        ),
         actions: [
           IconButton(
             icon: const Icon(Icons.check),

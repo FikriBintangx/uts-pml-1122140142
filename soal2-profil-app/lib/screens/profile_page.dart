@@ -230,7 +230,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   leading: const Icon(Icons.info, color: Colors.indigo),
                   title: const Text('Keahlian & Riwayat Pendidikan'),
                   subtitle: const Text('Lihat informasi lengkap tentang saya'),
-                  trailing: const Icon(Icons.arrow_forward_ios, size: 16),
+                  trailing: const Icon(Icons.arrow_forward, size: 20),
                   onTap: () {
                     Navigator.pushNamed(context, '/about');
                   },
