@@ -50,6 +50,35 @@ class _EditProfilePageState extends State<EditProfilePage> {
 
   void _simpanPerubahan() {
     if (!_formKey.currentState!.validate()) {
+      showDialog(
+        context: context,
+        builder: (ctx) => AlertDialog(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
+          ),
+          icon: const Icon(Icons.warning_amber_rounded, color: Colors.orange, size: 48),
+          title: const Text(
+            'Form Belum Valid',
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
+          content: const Text(
+            'Mohon periksa kembali kolom input formulir Anda. Pastikan semua data wajib terisi dengan format yang benar!',
+            textAlign: TextAlign.center,
+          ),
+          actionsAlignment: MainAxisAlignment.center,
+          actions: [
+            FilledButton(
+              onPressed: () => Navigator.pop(ctx),
+              style: FilledButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(16),
+                ),
+              ),
+              child: const Text('Perbaiki Data'),
+            ),
+          ],
+        ),
+      );
       return;
     }
 

@@ -11,8 +11,8 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   final _formKey = GlobalKey<FormState>();
-  final _usernameController = TextEditingController(text: 'fikribintang');
-  final _passwordController = TextEditingController(text: '1122140142');
+  final _usernameController = TextEditingController();
+  final _passwordController = TextEditingController();
   bool _isLoading = false;
   bool _obscurePassword = true;
 
@@ -32,9 +32,56 @@ class _LoginPageState extends State<LoginPage> {
       _isLoading = true;
     });
 
-    await Future.delayed(const Duration(seconds: 2));
+    await Future.delayed(const Duration(seconds: 1));
 
     if (!mounted) return;
+
+    final inputUsername = _usernameController.text.trim();
+    final inputPassword = _passwordController.text;
+
+    // Autentikasi akun mahasiswa
+    final isValidUser = (inputUsername == 'fikribintang' ||
+            inputUsername == '1122140142' ||
+            inputUsername == 'fikrbintang01@gmail.com') &&
+        inputPassword == '1122140142';
+
+    if (!isValidUser) {
+      setState(() {
+        _isLoading = false;
+      });
+
+      showDialog(
+        context: context,
+        builder: (ctx) => AlertDialog(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
+          ),
+          icon: const Icon(Icons.error_outline, color: Colors.red, size: 48),
+          title: const Text(
+            'Login Gagal',
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
+          content: const Text(
+            'Cek username dan password kamu, pastikan sudah benar',
+            textAlign: TextAlign.center,
+          ),
+          actionsAlignment: MainAxisAlignment.center,
+          actions: [
+            FilledButton(
+              onPressed: () => Navigator.pop(ctx),
+              style: FilledButton.styleFrom(
+                backgroundColor: Colors.red,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(16),
+                ),
+              ),
+              child: const Text('Coba Lagi'),
+            ),
+          ],
+        ),
+      );
+      return;
+    }
 
     setState(() {
       _isLoading = false;
